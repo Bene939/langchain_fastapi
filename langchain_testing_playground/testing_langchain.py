@@ -6,9 +6,9 @@ from langchain_core.prompts.prompt import PromptTemplate
 
 load_dotenv(find_dotenv())
 groq = ChatGroq(temperature=0, model_name="mixtral-8x7b-32768")
-memory=ConversationBufferWindowMemory(k=5, ai_prefix="AI Assistant")
+memory=ConversationBufferWindowMemory(ai_prefix="AI Assistant")
 template = """
- The following is a friendly conversation between a human and an AI. The AI is talkative and provides lots of specific details from its context. If the AI does not know the answer to a question, it truthfully says it does not know.
+ Your are an AI investment advisor. Answer any questions the user might have truthfully. Don't ask questions.
 
 Current conversation:
 {history}
@@ -17,4 +17,4 @@ AI Assistant:
 """
 prompt = PromptTemplate(input_variables=["history", "input"], template=template)
 conversation = ConversationChain(prompt=prompt, llm=groq, memory=memory)
-print(conversation.invoke("tell me a joke")["response"])
+print(conversation.invoke("i want to invest. can you recommend an etf for me?")["response"])
