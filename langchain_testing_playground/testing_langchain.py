@@ -1,14 +1,13 @@
 from langchain_groq import ChatGroq
 from dotenv import load_dotenv, find_dotenv
-from langchain.chains import ConversationChain
-from langchain.chains.conversation.memory import ConversationBufferWindowMemory
+from langchain.memory import ConversationBufferMemory
 from langchain_core.prompts.prompt import PromptTemplate
 from langchain_community.document_loaders import DirectoryLoader, TextLoader
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain_community.embeddings import HuggingFaceEmbeddings
 from langchain_community.vectorstores import FAISS
 import pickle
-from langchain.chains import RetrievalQA
+from langchain.chains import ConversationalRetrievalChain
 
 #setup env
 load_dotenv(find_dotenv())
@@ -30,7 +29,7 @@ with open("faq_vectorstore.pkl", "rb") as f:
 
 #setup model
 llm = ChatGroq(temperature=0, model_name="mixtral-8x7b-32768")
-memory=ConversationBufferWindowMemory(ai_prefix="AI Assistant")
+memory=ConversationBufferMemory(memory_key="chat_history", return_messages=True, output_key="answer")
 template = """
  Your are an AI assistant for scalable capital. Your should assist customers with questions they have.
 
@@ -40,6 +39,6 @@ Question: {question}
 Answer here:
 """
 prompt = PromptTemplate(input_variables=["context", "question"], template=template)
-conversation = RetrievalQA.from_chain_type(llm=llm, retriever=vectorstore.as_retriever(), chain_type="stuff", chain_type_kwargs={"prompt": prompt})
+conversation = ConversationalRetrievalChain.from_llm(llm=llm, memory=memory, retriever=vectorstore.as_retriever(), combine_docs_chain_kwargs={"prompt": prompt})
 query = "Are joint accounts offered?"
-print(conversation.invoke(query))
+print(conversation.invoke(query)["answer"])
