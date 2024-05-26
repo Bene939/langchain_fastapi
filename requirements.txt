@@ -6,3 +6,4 @@ faiss-cpu
 pickle-mixin
 sentence-transformers
 streamlit
+fastapi
