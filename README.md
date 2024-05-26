@@ -1,4 +1,4 @@
-#Chatbot using Langchain + FastAPI + Streamlit
+# Chatbot using Langchain + FastAPI + Streamlit
 This is a simple chatbot.
 It uses Streamlit as a front end.
 Langchain is used to connect to an llm via groq API.
