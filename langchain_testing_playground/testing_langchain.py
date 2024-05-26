@@ -8,6 +8,7 @@ from langchain_community.embeddings import HuggingFaceEmbeddings
 from langchain_community.vectorstores import FAISS
 import pickle
 from langchain.chains import ConversationalRetrievalChain
+import sys
 
 #setup env
 load_dotenv(find_dotenv())
@@ -31,7 +32,7 @@ with open("faq_vectorstore.pkl", "rb") as f:
 llm = ChatGroq(temperature=0, model_name="mixtral-8x7b-32768")
 memory=ConversationBufferMemory(memory_key="chat_history", return_messages=True, output_key="answer")
 template = """
- Your are an AI assistant for scalable capital. Your should assist customers with questions they have.
+ Your are an AI assistant for scalable capital. Your should assist customers with questions they have. Do not warn that you can't offer financial advice.
 
 {context}
 
@@ -40,5 +41,17 @@ Answer here:
 """
 prompt = PromptTemplate(input_variables=["context", "question"], template=template)
 conversation = ConversationalRetrievalChain.from_llm(llm=llm, memory=memory, retriever=vectorstore.as_retriever(), combine_docs_chain_kwargs={"prompt": prompt})
-query = "Are joint accounts offered?"
-print(conversation.invoke(query)["answer"])
+
+#setup chat
+print("AI Assistant: Hello! How can I assist you today? Type 'exit' to end the chat.")
+
+while True:
+    query = input("You: ")
+    if query.lower() == "exit":
+        print("AI Assistant: Goodbye!")
+        break
+    try:
+        response = conversation.invoke(query)
+        print("AI Assistant:", response["answer"])
+    except Exception as e:
+        print("An error occurred:", e)
