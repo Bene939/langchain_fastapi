@@ -1,0 +1,54 @@
+Q: What are the requirements to sign up for Scalable Wealth?
+A: Our service is aimed at persons residing in Germany or Austria. In addition, the following requirements must be met:
+You are at least 18 years old.
+You are not a taxpayer in the USA (not a "US person" according to US tax law).
+You have a current account that is held at a credit institution located in the SEPA area.
+You will invest the minimum amount.
+Please also note that the custodian bank only pays taxes for you if you are taxable in Germany. If you are subject to tax abroad, you must carry out the correct taxation of all securities transactions yourself. We provide you a tax reporting for this purpose.
+
+Q: Why do I need to verify my identity?
+A: The Money Laundering Act (MLA) requires us to identify our clients. This identification is also in your interest, as it ensures a higher level of security in the client relationship.
+An MLA-compliant identification is carried out conveniently via POSTIDENT video, online identification using your ID (eID), or in the traditional way at your post office.
+
+Q: What is the identification process?
+A: The identification is done via the POSTIDENT identification procedure by by our partner, Deutsche Post. With POSTIDENT, you can choose between POSTIDENT video, online identification using your ID (eID), and identification in person at a post office branch.
+Identification via the online ID function (eID) with your German ID card, electronic residence permit (eAT) or eID card for citizens of the European Union (EU) and the European Economic Area (EEA) is the fastest and easiest way to open an account with Scalable Capital. More information on the identification via online ID function.
+You can also identify yourself through our partner POSTIDENT with your foreign identity card or passport. Download list of the ID cards supported by POSTIDENT-Video (German only).
+If your ID document is not supported for POSTIDENT-Video, you can carry out identification in person at a post office. View list of the ID cards accepted in branch offices (German only).
+You can start the identification process conveniently in our app or online by logging in to your Scalable Capital account after completing the registration.
+Once you have successfully completed the identification, you do not need to do anything else. The identification data is transmitted to Scalable Capital, and the opening of both the clearing account and the securities account is initiated. It can take up to three working days to open the accounts. You will be informed automatically as soon as the account opening is completed.
+If any questions arise from the transmitted identification data, we will contact you proactively.
+
+Q: What criteria must my clearing account fulfill?
+A: The reference account that you register with us must be a current account (payment transaction account) in your name at a credit institution located in the SEPA area.
+The use of a overnight deposit account is not permitted. If your reference account is a joint account, you must ensure that you are registered as the beneficial owner.
+
+Q: Is there a minimum deposit?
+A: The minimum investment amount for Wealth starts at 20 euros - as a monthly savings plan or a lump sum.
+However, partial payouts that would reduce the investment amount below 20 euros are not possible. In this case, you would have to cancel your contract and have your entire investment amount paid out, this is possible at any time.
+
+Q: How do you choose a suitable investment strategy for me?
+A: As a regulated financial services institution, we are legally obliged to form a picture of your financial situation and other relevant circumstances. Only then are we allowed to recommend an investment strategy that is suitable for you.
+At the beginning of the registration process, we will guide you through a questionnaire. Based on the information you provide, we assess which investment strategy best meets your investment objectives. Of course, we also check whether the risks associated with a particular investment strategy are financially viable for you and whether you understand these risks based on your knowledge and experience.
+From this information, we determine your risk profile, recommend an investment strategy that is suitable, and implement it for you.
+
+Q: Can I transfer an existing portfolio to Scalable Wealth?
+A: In the case of a securities account transfer to Scalable Wealth, all transferred securities are sold during the process and the resulting liquid funds are added to the existing portfolio in accordance with your chosen investment strategy.
+
+This is due to the fact that a transfer of securities does not allow for the transfer of the securities history. As a result, our algorithm would not be able to work appropriately with the securities in accordance with your chosen investment strategy.
+If you are interested in a transfer or have further questions, please feel free to contact our team at service@scalable.capital.
+
+Q: Are joint accounts offered?
+A: No, we do not currently offer joint accounts.
+
+Q: Can I open an account for my underage child?
+A: You can open children's accounts with Scalable Capital from a minimum investment of either 20 euros as a monthly savings plan or as a one-off amount.Please note that a children's account is currently only possible in the form of our wealth management at Baader Bank. Our brokerage offer is aimed exclusively at private individuals of full age.
+To open a children's account, register your child for wealth management via our homepage. Please note that the account must be in your child's name. You will then receive an automated email with further information.
+
+Q: Can I open multiple portfolios?
+A: You can hold multiple portfolios with different investment strategies at Scalable Capital. You can add additional portfolios in the customer area under "Home". Please note that a new clearing account and securities account must be opened for each new portfolio and the minimum investment must be deposited.
+
+Q: Can I open a wealth portfolio as a broker client?
+A: If you're already using our broker, you can also add an automated ETF-based wealth management portfolio.
+To do so, log in to your account and click on the plus icon ("+") in the mobile app or on "Add product" in your web browser. Then, select the wealth portfolio option. In order to determine your risk profile, you will need to complete our questionnaire. You will not need to verify your identity again.
+Please note that a new clearing account and a new securities account will be opened for each new portfolio. The minimum investment amount must be fulfilled for each portfolio as well.
