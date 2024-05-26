@@ -1,0 +1,12 @@
+#Chatbot using Langchain + FastAPI + Streamlit
+This is a simple chatbot.
+It uses Streamlit as a front end.
+Langchain is used to connect to an llm via groq API.
+FastAPI is used as a way for the front end to communicate with the model.
+
+By doing so the API could easily be extended for further functionality e.g. calling computer vision model to interpret a picture the user uploaded.
+Langchain could also be used to add further functionality e.g. by first using an llm to identify the user's intent after which either the chatbot keeps assisting the user or a human is called to resolve the situation
+
+### Starting the App
+1. python fastapi_backend.py
+2. streamlit run streamlit_frontend.py
