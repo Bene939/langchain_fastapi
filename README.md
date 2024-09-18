@@ -1,4 +1,4 @@
-[chatbot_example_conversation (1)](https://github.com/user-attachments/assets/b0ff9cd0-9cf9-4d1e-b3c3-cf0f2aec47da)
+![chatbot_example_conversation (1)](https://github.com/user-attachments/assets/b0ff9cd0-9cf9-4d1e-b3c3-cf0f2aec47da)
 
 # Chatbot using Langchain + FastAPI + Streamlit
 This is a simple chatbot.
@@ -12,4 +12,4 @@ Langchain could also be used to add further functionality e.g. by first using an
 ### Starting the App
 1. Add "GROQ_API_KEY" to .env file
 2. python fastapi_backend.py
-3. streamlit run streamlit_frontend.py!
+3. streamlit run streamlit_frontend.py
